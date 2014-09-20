@@ -31,7 +31,7 @@
             {% else %}
               <span class="glyphicon glyphicon-file"></span>
             {% endif %}
-            <span><a href="{% url 'cosinnus:document:document-detail' group=group.slug slug=obj.slug %}" title="{{ obj.title }}">{{ obj.title }}</a></span>
+            <span><a href="{% url 'cosinnus:etherpad:pad-detail' group=group.slug slug=obj.slug %}" title="{{ obj.title }}">{{ obj.title }}</a></span>
             <span>{{ obj.path }}</span>
             {% if not forloop.last %}<br/>{% endif %}
           {% endfor %}
